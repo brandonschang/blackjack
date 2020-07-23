@@ -574,8 +574,7 @@ while game_on:																#main game logic
 	if player_chips.winnings > 0:
 		print(f'\nPlayer, you won ${player_chips.winnings} that hand. ')
 	elif player_chips.winnings < 0:
-		player_chips.winnings *= -1
-		print(f'\nPlayer, you lost ${player_chips.winnings} that hand. ')
+		print(f'\nPlayer, you lost ${abs(player_chips.winnings)} that hand. ')
 	else:
 		print('\nPlayer, you broke even that hand. ')
 	print(f'You currently have ${player_chips.total} in chips. ')
